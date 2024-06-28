@@ -1,0 +1,60 @@
+version: '3.2'
+services:
+  rabbitmq_bootcamp:
+    build:
+      context: ./rabbitmq
+    image: rafaelsoaresa/rabbitmq_bootcamp:latest
+    ports:
+      - 15672:15672
+      - 5672:5672
+    container_name: rabbitmq_bootcamp
+    networks:
+      - backend1
+  postgres_bootcamp:
+    build:
+      context: ./postgres
+    image: rafaelsoaresa/postgres_bootcamp:latest
+    ports:
+      - 5432:5432
+    container_name: postgres_bootcamp
+    networks:
+      - backend1
+  bootcamp-user-api:
+    build:
+      context: ../rafael-soares-backend/app-user-api/app-user-api
+      dockerfile: ../app-user-api/Dockerfile
+    image: rafaelsoaresa/app-user-api:latest
+    ports:
+      - 8081:8081
+    container_name: app-user-api
+    environment:
+      - RABBIT_HOST=rabbitmq1_bootcamp
+      - POSTGRES_URL=postgres_bootcamp
+      - POSTGRES_USER=bootcamp
+      - POSTGRES_PASSWORD=bootcamppass
+      - POSTGRES_DATABASE=bootcamp
+    depends_on:
+      - postgres_bootcamp
+    networks:
+      - backend1
+  bootcamp-integration-api:
+    build:
+      context: ../rafael-soares-backend/app-integration-api
+      dockerfile: ../app-integration-api/Dockerfile
+    image: rafaelsoaresa/app-integration-api:latest
+    ports:
+      - 8082:8082
+    container_name: app-integration-api
+    environment:
+      - RABBIT_HOST=rabbitmq1_bootcamp
+      - POSTGRES_URL=postgres_bootcamp
+      - POSTGRES_USER=bootcamp
+      - POSTGRES_PASSWORD=bootcamppass
+      - POSTGRES_DATABASE=bootcamp
+    depends_on:
+      - postgres_bootcamp
+    networks:
+      - backend1
+networks:
+  backend1:
+    driver: "bridge"
