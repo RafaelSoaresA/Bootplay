@@ -2,6 +2,7 @@ package br.com.sysmap.bootcamp.appuserapi.domain.service;
 
 import br.com.sysmap.bootcamp.appuserapi.domain.entities.Users;
 import br.com.sysmap.bootcamp.appuserapi.domain.repository.UsersRepository;
+import br.com.sysmap.bootcamp.appuserapi.dto.UserDto;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,7 @@ public class UsersServiceTest {
         Users users = Users.builder().id(1L).name("teste").email("test").password("teste").build();
         when(usersRepository.save(any(Users.class))).thenReturn(users);
 
-        Users savedUsers = usersService.create(users);
+        UserDto savedUsers = usersService.create(users);
 
         assertEquals(users, savedUsers);
     }

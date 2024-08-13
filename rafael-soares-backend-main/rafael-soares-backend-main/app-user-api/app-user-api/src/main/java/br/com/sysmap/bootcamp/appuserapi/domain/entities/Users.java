@@ -1,5 +1,6 @@
 package br.com.sysmap.bootcamp.appuserapi.domain.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 

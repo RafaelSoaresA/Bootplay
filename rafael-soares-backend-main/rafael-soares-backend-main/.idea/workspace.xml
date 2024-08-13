@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d04cd533-2bc0-4c83-8189-6020fcedc618" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/domain/entities/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/domain/entities/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/domain/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/domain/service/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/web/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/web/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/test/java/br/com/sysmap/bootcamp/appuserapi/domain/service/UsersServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/test/java/br/com/sysmap/bootcamp/appuserapi/domain/service/UsersServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/test/java/br/com/sysmap/bootcamp/appuserapi/web/UsersControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/test/java/br/com/sysmap/bootcamp/appuserapi/web/UsersControllerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2kYfXcVcu0ro64VGYSHLuAYh8TK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.UsersControllerTest.executor": "Run",
+    "JUnit.UsersControllerTest.shouldReturnUserIdWhenValidUserIdIsSaved.executor": "Debug",
+    "JUnit.UsersControllerTest.shouldReturnUsersWhenValidUsersIsSaved.executor": "Run",
+    "JUnit.UsersServiceTest.shouldReturnUsersWhenValidUsersIsSaved.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/rafael.abrantes/Documents/projetos/ms-customer-order-histories-v1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rafael.abrantes\Documents\projetos\Bootplay\rafael-soares-backend-main\rafael-soares-backend-main\app-user-api" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UsersServiceTest.shouldReturnUsersWhenValidUsersIsSaved">
+    <configuration name="UsersControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app-user-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.sysmap.bootcamp.appuserapi.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.sysmap.bootcamp.appuserapi.web" />
+      <option name="MAIN_CLASS_NAME" value="br.com.sysmap.bootcamp.appuserapi.web.UsersControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersControllerTest.shouldReturnUserIdWhenValidUserIdIsSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app-user-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.sysmap.bootcamp.appuserapi.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.sysmap.bootcamp.appuserapi.web" />
+      <option name="MAIN_CLASS_NAME" value="br.com.sysmap.bootcamp.appuserapi.web.UsersControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnUserIdWhenValidUserIdIsSaved" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersControllerTest.shouldReturnUsersWhenValidUsersIsSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app-user-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.sysmap.bootcamp.appuserapi.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.sysmap.bootcamp.appuserapi.web" />
+      <option name="MAIN_CLASS_NAME" value="br.com.sysmap.bootcamp.appuserapi.web.UsersControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnUsersWhenValidUsersIsSaved" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersServiceTest.shouldReturnUsersWhenValidUsersIsSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app-user-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.sysmap.bootcamp.appuserapi.domain.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.sysmap.bootcamp.appuserapi.domain.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.sysmap.bootcamp.appuserapi.domain.service.UsersServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnUsersWhenValidUsersIsSaved" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootcampSysmap2024IntegrationApi" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="app-integration-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.sysmap.bootcamp.BootcampSysmap2024IntegrationApi" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootcampSysmap2024RafaelSoaresAbrantesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="app-user-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.sysmap.bootcamp.appuserapi.BootcampSysmap2024RafaelSoaresAbrantesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UsersServiceTest.shouldReturnUsersWhenValidUsersIsSaved" />
+        <item itemvalue="JUnit.UsersControllerTest.shouldReturnUsersWhenValidUsersIsSaved" />
+        <item itemvalue="JUnit.UsersControllerTest.shouldReturnUserIdWhenValidUserIdIsSaved" />
+        <item itemvalue="JUnit.UsersControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d04cd533-2bc0-4c83-8189-6020fcedc618" name="Changes" comment="" />
+      <created>1723465471819</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723465471819</updated>
+      <workItem from="1723465472996" duration="20973000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

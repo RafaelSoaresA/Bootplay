@@ -3,6 +3,7 @@ package br.com.sysmap.bootcamp.appuserapi.web;
 import br.com.sysmap.bootcamp.appuserapi.domain.entities.Users;
 import br.com.sysmap.bootcamp.appuserapi.domain.service.UsersService;
 import br.com.sysmap.bootcamp.appuserapi.dto.AuthDto;
+import br.com.sysmap.bootcamp.appuserapi.dto.UserDto;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -22,7 +23,7 @@ public class UsersController {
 
     @PostMapping("/create")
     @Operation(summary = "Save user", description = "Function responsible for user register.")
-    public ResponseEntity<Users> saveUser (@RequestBody Users user) {
+    public ResponseEntity<UserDto> saveUser (@RequestBody Users user) {
         return ResponseEntity.ok(usersService.create(user));
     }
 

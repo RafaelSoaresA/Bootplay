@@ -5,8 +5,10 @@ import br.com.sysmap.bootcamp.appuserapi.domain.entities.Wallet;
 import br.com.sysmap.bootcamp.appuserapi.domain.repository.UsersRepository;
 import br.com.sysmap.bootcamp.appuserapi.domain.repository.WalletRepository;
 import br.com.sysmap.bootcamp.appuserapi.dto.AuthDto;
+import br.com.sysmap.bootcamp.appuserapi.dto.UserDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.modelmapper.ModelMapper;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
@@ -31,10 +33,11 @@ public class UsersService implements UserDetailsService {
 
     private final UsersRepository usersRepository;
     private final PasswordEncoder passwordEncoder;
+    private final ModelMapper modelMapper;
 
 
     @Transactional(propagation = Propagation.REQUIRED)
-   public Users create(Users user) {
+   public UserDto create(Users user) {
         Optional<Users> usersOptional = this.usersRepository.findByEmail(user.getEmail());
         if (usersOptional.isPresent()) {
             throw new RuntimeException("User already exists");
@@ -44,7 +47,8 @@ public class UsersService implements UserDetailsService {
 
         log.info("Creating user: {}", user);
         try {
-            return this.usersRepository.save(user);
+            this.usersRepository.save(user);
+            return modelMapper.map(user, UserDto.class);
         }
         catch (Exception e) {
            log.error("Error saving user: {}", e);
