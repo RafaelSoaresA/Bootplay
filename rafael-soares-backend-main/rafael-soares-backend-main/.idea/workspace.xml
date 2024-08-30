@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d04cd533-2bc0-4c83-8189-6020fcedc618" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/domain/entities/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/domain/entities/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/domain/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/domain/service/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/web/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/main/java/br/com/sysmap/bootcamp/appuserapi/web/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/test/java/br/com/sysmap/bootcamp/appuserapi/domain/service/UsersServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/test/java/br/com/sysmap/bootcamp/appuserapi/domain/service/UsersServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-user-api/app-user-api/src/test/java/br/com/sysmap/bootcamp/appuserapi/web/UsersControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-user-api/app-user-api/src/test/java/br/com/sysmap/bootcamp/appuserapi/web/UsersControllerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d04cd533-2bc0-4c83-8189-6020fcedc618" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/rafael.abrantes/Documents/projetos/ms-customer-order-histories-v1",
+    "last_opened_file_path": "C:/Users/rafael.abrantes/Documents/projetos/Bootplay - Copia",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -164,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723465471819</updated>
-      <workItem from="1723465472996" duration="20973000" />
+      <workItem from="1723465472996" duration="21243000" />
     </task>
     <servers />
   </component>

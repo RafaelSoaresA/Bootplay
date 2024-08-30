@@ -21,7 +21,7 @@ services:
       - backend1
   bootcamp-user-api:
     build:
-      context: ../rafael-soares-backend/app-user-api/app-user-api
+      context: ../rafael-soares-backend-main/app-user-api/app-user-api
       dockerfile: ../app-user-api/Dockerfile
     image: rafaelsoaresa/app-user-api:latest
     ports:
@@ -39,7 +39,7 @@ services:
       - backend1
   bootcamp-integration-api:
     build:
-      context: ../rafael-soares-backend/app-integration-api
+      context: ../rafael-soares-backend-main/app-integration-api
       dockerfile: ../app-integration-api/Dockerfile
     image: rafaelsoaresa/app-integration-api:latest
     ports:

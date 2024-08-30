@@ -37,7 +37,7 @@ public class UsersService implements UserDetailsService {
 
 
     @Transactional(propagation = Propagation.REQUIRED)
-   public UserDto create(Users user) {
+    public UserDto create(Users user) {
         Optional<Users> usersOptional = this.usersRepository.findByEmail(user.getEmail());
         if (usersOptional.isPresent()) {
             throw new RuntimeException("User already exists");
@@ -54,7 +54,6 @@ public class UsersService implements UserDetailsService {
            log.error("Error saving user: {}", e);
         }
         return null;
-
     }
 
 
@@ -77,7 +76,7 @@ public class UsersService implements UserDetailsService {
     }
 
     public Users update(Users user) {
-       Optional<Users> usersOptional = this.usersRepository.findByEmail(SecurityContextHolder.getContext().getAuthentication().getName());
+       Optional<Users> usersOptional = this.usersRepository.findByEmail(user.getEmail());
 
        user = user.toBuilder().password(passwordEncoder.encode(user.getPassword())).build();
        user.setId(usersOptional.get().getId());
@@ -102,6 +101,5 @@ public class UsersService implements UserDetailsService {
                 Base64.getEncoder().withoutPadding().encodeToString(password.toString().getBytes())
         ).id(users.getId()).build();
     }
-
 
 }

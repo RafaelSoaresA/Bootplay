@@ -19,6 +19,9 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -80,5 +83,24 @@ public class UsersControllerTest {
                 .andExpect(content().json(objectMapper.writeValueAsString(users)));
     }
 
+    @Test
+    @DisplayName("Should test the update path")
+    public void shouldUpdate() throws Exception {
+        Users users = Users.builder().id(1L).name("test").email("test@example.com").password("123").build();
 
+        Mockito.when(usersRepository.findByEmail(users.getEmail())).thenReturn(Optional.of(users));
+        Mockito.when(usersRepository.save(any(Users.class))).thenReturn(users);
+
+        Users result = usersService.update(users);
+
+        mockMvc.perform(put ("/users/update")
+                .contentType(MediaType.APPLICATION_JSON)
+                .contentType(objectMapper.writeValueAsString(users)))
+                        .andExpect(status().isOk());
+
+
+        assertEquals(1L, result.getId());
+        assertEquals("test", result.getName());
+
+    }
 }
